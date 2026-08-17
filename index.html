@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Radar ChollOfertas</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="cabecera">
+
+    <div class="marca">
+
+        <div class="logo-rco">
+            <div class="radar-simple">
+                <span class="radar-punto"></span>
+                <span class="radar-onda onda-a"></span>
+                <span class="radar-onda onda-b"></span>
+            </div>
+
+            <span class="rco">RCO</span>
+        </div>
+
+        <div class="separador-logo"></div>
+
+        <div class="nombre-marca">
+            <h1>
+                Radar <span>ChollOfertas</span>
+            </h1>
+
+            <p>
+                Ofertas y chollos encontrados para ti
+            </p>
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="buscador-filtros">
+
+        <div class="buscador">
+            <span>⌕</span>
+
+            <input
+                id="buscar"
+                type="search"
+                placeholder="Buscar productos..."
+            >
+        </div>
+
+
+        <select id="filtroTipo">
+            <option value="TODOS">
+                Todas las categorías
+            </option>
+
+            <option value="CHOLLO">
+                Chollos
+            </option>
+
+            <option value="OFERTA">
+                Ofertas
+            </option>
+        </select>
+
+
+        <select id="filtroTienda">
+            <option value="TODAS">
+                Todas las tiendas
+            </option>
+        </select>
+
+
+        <select id="ordenar">
+            <option value="recientes">
+                Orden: Más recientes
+            </option>
+
+            <option value="descuento">
+                Mayor descuento
+            </option>
+
+            <option value="precio">
+                Menor precio
+            </option>
+        </select>
+
+    </section>
+
+
+    <section class="destacadas">
+
+        <h2>
+            <span class="fuego">🔥</span>
+            OFERTAS DESTACADAS
+        </h2>
+
+        <div
+            id="productos"
+            class="productos">
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <strong>⚡ Radar ChollOfertas</strong>
+
+    <div class="aviso">
+        Algunos enlaces pueden ser enlaces de afiliado.
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

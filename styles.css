@@ -1,0 +1,742 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+:root {
+    --rosa: #f41472;
+    --agua: #21c5c3;
+    --pistacho: #a8e83c;
+    --texto: #172033;
+    --gris: #68707d;
+    --borde: #e2e6ea;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   CABECERA
+========================= */
+
+.cabecera {
+    background: white;
+    padding: 30px 3%;
+}
+
+.marca {
+    max-width: 1500px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+}
+
+.logo-rco {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rco {
+    color: var(--agua);
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+.separador-logo {
+    width: 1px;
+    height: 62px;
+    background: #9ba0a6;
+}
+
+.nombre-marca h1 {
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.nombre-marca h1 span {
+    color: var(--agua);
+}
+
+.nombre-marca p {
+    margin: 7px 0 0;
+
+    color: #666b74;
+    font-size: 17px;
+}
+
+
+/* =========================
+   RADAR
+========================= */
+
+.radar-simple {
+    position: relative;
+
+    width: 58px;
+    height: 55px;
+}
+
+.radar-punto {
+    position: absolute;
+
+    left: 3px;
+    bottom: 3px;
+
+    width: 20px;
+    height: 20px;
+
+    background: var(--rosa);
+    border-radius: 50%;
+}
+
+.radar-onda {
+    position: absolute;
+
+    border: 5px solid var(--pistacho);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+    border-radius: 50%;
+
+    transform: rotate(-45deg);
+}
+
+.onda-a {
+    width: 34px;
+    height: 34px;
+
+    left: 3px;
+    bottom: 3px;
+}
+
+.onda-b {
+    width: 52px;
+    height: 52px;
+
+    left: 3px;
+    bottom: 3px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    max-width: 1500px;
+    margin: auto;
+
+    padding: 10px 3% 55px;
+}
+
+
+/* =========================
+   BUSCADOR Y FILTROS
+========================= */
+
+.buscador-filtros {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, 1.8fr)
+        1fr
+        1fr
+        1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border: 1px solid var(--borde);
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    margin-bottom: 40px;
+}
+
+.buscador {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    border: 2px solid var(--agua);
+    border-radius: 10px;
+
+    padding: 0 18px;
+}
+
+.buscador span {
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.buscador input {
+    width: 100%;
+
+    border: 0;
+    outline: 0;
+
+    font-size: 16px;
+    color: var(--texto);
+
+    background: transparent;
+}
+
+select {
+    width: 100%;
+    height: 62px;
+
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+
+    padding: 0 16px;
+
+    background: white;
+    color: var(--texto);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   OFERTAS DESTACADAS
+========================= */
+
+.destacadas h2 {
+    margin: 0 0 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 31px;
+    font-weight: 900;
+}
+
+.fuego {
+    font-size: 38px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.productos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 26px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, .055);
+}
+
+.foto-contenedor {
+    position: relative;
+
+    height: 285px;
+
+    background: white;
+}
+
+.foto-producto {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   DESCUENTO
+========================= */
+
+.descuento {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 2;
+
+    background: var(--rosa);
+    color: white;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+/* =========================
+   CONTENIDO DE TARJETA
+========================= */
+
+.contenido {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 18px 18px;
+}
+
+
+/* CONTENEDOR NOMBRE + CARACTERÍSTICAS */
+
+.nombre {
+    min-height: 52px;
+    line-height: 1.4;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* SOLO EL NOMBRE DEL PRODUCTO */
+
+.nombre-producto {
+    color: var(--texto);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* CARACTERÍSTICAS A CONTINUACIÓN */
+
+.caracteristicas {
+    color: #68707d;
+
+    font-size: 16px !important;
+    font-weight: 400 !important;
+
+    line-height: 1.4;
+    letter-spacing: normal;
+}
+
+
+/* =========================
+   PRECIOS
+========================= */
+
+.precios {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 16px;
+}
+
+.precio-oferta {
+    color: var(--rosa);
+
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.precio-anterior {
+    color: #747982;
+
+    font-size: 16px;
+
+    text-decoration: line-through;
+}
+
+
+/* =========================
+   TIPO CHOLLO / OFERTA
+========================= */
+
+.tipo-producto {
+    width: fit-content;
+
+    margin-top: 13px;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.tipo-producto.chollo {
+    background: #eafadb;
+    color: #20982d;
+}
+
+.tipo-producto.oferta {
+    background: #e3fafa;
+    color: #148b8a;
+}
+
+
+/* =========================
+   VALORACIÓN
+========================= */
+
+.valoracion-general {
+    margin-top: 13px;
+
+    font-size: 14px;
+    color: #6c727c;
+}
+
+.estrellas {
+    color: #ffc400;
+    font-size: 18px;
+}
+
+
+/* =========================
+   TIENDAS
+========================= */
+
+.tiendas-producto {
+    margin-top: auto;
+
+    padding-top: 16px;
+}
+
+.bloque-tienda {
+    margin-top: 8px;
+}
+
+.fila-tienda {
+    min-height: 54px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 7px 8px 7px 12px;
+
+    border: 1px solid var(--borde);
+    border-radius: 9px;
+}
+
+.nombre-tienda {
+    min-width: 0;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nombre-tienda::before {
+    content: "🛍️";
+    margin-right: 7px;
+}
+
+.boton-oferta {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 38px;
+
+    padding: 0 13px;
+
+    border-radius: 7px;
+
+    background: var(--rosa);
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    white-space: nowrap;
+}
+
+.boton-oferta:hover {
+    opacity: .87;
+}
+
+
+/* VALORACIÓN INDIVIDUAL DE CADA TIENDA */
+
+.datos-tienda {
+    padding: 5px 12px 7px;
+
+    color: #6c727c;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid var(--borde);
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.aviso {
+    margin-top: 7px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .productos {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .buscador-filtros {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 650px) {
+
+    .cabecera {
+        padding: 20px 15px;
+    }
+
+    .marca {
+        gap: 12px;
+    }
+
+    .rco {
+        font-size: 31px;
+    }
+
+    .radar-simple {
+        transform: scale(.72);
+        margin-right: -8px;
+    }
+
+    .separador-logo {
+        height: 45px;
+    }
+
+    .nombre-marca h1 {
+        font-size: 19px;
+    }
+
+    .nombre-marca p {
+        font-size: 11px;
+    }
+
+    main {
+        padding:
+            10px 15px 40px;
+    }
+
+    .buscador-filtros {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+    .buscador,
+    select {
+        height: 52px;
+    }
+
+    .destacadas h2 {
+        font-size: 24px;
+    }
+
+    .fuego {
+        font-size: 31px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* AJUSTE FINAL DE ANCHO DE PAGINA */
+
+.cabecera {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.marca {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+main {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.productos {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+}
+
+
+/* AJUSTE DE TARJETAS */
+
+.productos {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+}
+
+.foto-contenedor {
+    height: 200px !important;
+}
+
+.foto-producto {
+    padding: 12px !important;
+}
+
+.contenido {
+    padding: 0 12px 12px !important;
+}
+
+@media (min-width: 1700px) {
+    .productos {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .productos {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =====================================================
+   ALINEACION FINAL DEL CONTENIDO DE LAS TARJETAS
+===================================================== */
+
+.tarjeta {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.contenido {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.nombre {
+    flex: 0 0 auto !important;
+}
+
+.precios {
+    flex: 0 0 auto !important;
+    margin-top: 14px !important;
+}
+
+.tipo-producto {
+    flex: 0 0 auto !important;
+    margin-top: 10px !important;
+}
+
+.tiendas-producto {
+    flex: 0 0 auto !important;
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+}
+
+.bloque-tienda {
+    margin-top: 7px !important;
+}
+

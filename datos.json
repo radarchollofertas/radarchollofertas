@@ -1,0 +1,65 @@
+[
+    {
+        "id": "auriculares_bluetooth_inalambricos",
+        "nombre": "Auriculares Bluetooth inalámbricos",
+        "caracteristicas": "Bluetooth 5.3, sonido estéreo y batería de larga duración.",
+        "foto": "imagenes/auriculares_bluetooth_inalambricos.jpg",
+        "descuento": 70,
+        "precio_anterior": 100.0,
+        "precio_oferta": 30.0,
+        "tipo": "CHOLLO",
+        "message_id": 110,
+        "tiendas": [
+            {
+                "nombre": "MEDIAMARKT",
+                "enlace": "https://ejemplo.com",
+                "valoracion": 4.8,
+                "opiniones": 15000
+            },
+            {
+                "nombre": "ALIEXPRESS",
+                "enlace": "https://ejemplo.com",
+                "valoracion": 4.8,
+                "opiniones": 15000
+            }
+        ]
+    },
+    {
+        "id": "teclado_inalambrico_compacto_prueba_oferta_9",
+        "nombre": "Teclado inalambrico compacto prueba oferta 9",
+        "caracteristicas": "Teclas silenciosas, Bluetooth y batería recargable.",
+        "foto": "imagenes/teclado_inalambrico_compacto_prueba_oferta_9.jpg",
+        "descuento": 60,
+        "precio_anterior": 50.0,
+        "precio_oferta": 20.0,
+        "tipo": "CHOLLO",
+        "message_id": 111,
+        "tiendas": [
+            {
+                "nombre": "AMAZON",
+                "enlace": "https://ejemplo.com",
+                "valoracion": 4.6,
+                "opiniones": 3000
+            }
+        ]
+    },
+    {
+        "id": "raton_gaming_inalambrico",
+        "nombre": "Raton gaming inalámbrico",
+        "caracteristicas": "Ratón gaming inalámbrico de prueba.",
+        "foto": "imagenes/raton_gaming_inalambrico.jpg",
+        "descuento": 64,
+        "precio_anterior": 50.0,
+        "precio_oferta": 18.0,
+        "tipo": "CHOLLO",
+        "message_id": 143,
+        "tiendas": [
+            {
+                "nombre": "AMAZON",
+                "enlace": "https://ejemplo.com",
+                "valoracion": 4.7,
+                "opiniones": 1000
+            }
+        ]
+    }
+]
