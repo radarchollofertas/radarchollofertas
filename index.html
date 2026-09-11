@@ -5,16 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Radar ChollOfertas está preparando su catálogo de ofertas reales mediante conexiones oficiales con tiendas y programas de afiliación.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Radar ChollOfertas">
+    <meta property="og:title" content="Radar ChollOfertas">
+    <meta property="og:description" content="Estamos preparando ofertas reales mediante conexiones oficiales con tiendas y programas de afiliación.">
+    <meta property="og:url" content="https://radarchollofertas.es/">
+    <meta property="og:image" content="https://radarchollofertas.es/imagenes/compartir-radar-chollofertas.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Radar ChollOfertas, ofertas y chollos encontrados para ti">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Radar ChollOfertas">
+    <meta name="twitter:description" content="Estamos preparando ofertas reales mediante conexiones oficiales con tiendas y programas de afiliación.">
+    <meta name="twitter:image" content="https://radarchollofertas.es/imagenes/compartir-radar-chollofertas.png">
+
+    <link rel="canonical" href="https://radarchollofertas.es/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico">
+
     <title>Radar ChollOfertas</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=lanzamiento1">
 </head>
 
 <body>
 
 <header class="cabecera">
 
-    <div class="marca">
+    <div class="marca" id="irInicio" role="link" tabindex="0" title="Ir al inicio">
 
         <div class="logo-rco">
             <div class="radar-simple">
@@ -55,21 +78,37 @@
                 type="search"
                 placeholder="Buscar productos..."
             >
+
+            <button
+    id="abrirMosaico"
+    class="acceso-mosaico"
+    type="button"
+    title="Ver mosaico de ofertas"
+    aria-label="Ver mosaico de ofertas"
+>
+    <img class="imagen-mosaico-boton" src="imagenes/icono_mosaico.png" alt="" aria-hidden="true">
+</button>
         </div>
 
 
+        <select id="filtroCategoria">
+            <option value="TODAS">Todas las categorías</option>
+            <option value="ELECTRONICA">Electrónica</option>
+            <option value="BELLEZA">Belleza</option>
+            <option value="SUPERMERCADO">Supermercado</option>
+            <option value="HOGAR">Hogar</option>
+            <option value="INFANTIL">Infantil</option>
+            <option value="INFORMATICA">Informática</option>
+            <option value="MODA">Moda</option>
+            <option value="DEPORTES">Deportes</option>
+            <option value="LIBROS">Libros</option>
+            <option value="OTROS">Otros</option>
+        </select>
+
         <select id="filtroTipo">
-            <option value="TODOS">
-                Todas las categorías
-            </option>
-
-            <option value="CHOLLO">
-                Chollos
-            </option>
-
-            <option value="OFERTA">
-                Ofertas
-            </option>
+            <option value="TODOS">Tipo de oferta: Todas</option>
+            <option value="CHOLLO">🔥 Chollos</option>
+            <option value="OFERTA">🛒 Ofertas</option>
         </select>
 
 
@@ -104,6 +143,10 @@
             OFERTAS DESTACADAS
         </h2>
 
+        <button id="verTodasOfertas" class="ver-todas-ofertas" type="button" hidden>
+            VISITAR PÁGINA
+        </button>
+
         <div
             id="productos"
             class="productos">
@@ -122,10 +165,34 @@
         Algunos enlaces pueden ser enlaces de afiliado.
     </div>
 
+    <div class="enlaces-footer">
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="afiliacion.html">Afiliación</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
 </footer>
 
 
-<script src="app.js"></script>
+<script src="app.js?v=lanzamiento1"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
