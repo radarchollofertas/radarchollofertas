@@ -5,6 +5,27 @@
 
 /* ESTADO PREVIO AL LANZAMIENTO */
 
+.buscador-filtros.controles-pendientes {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.buscador-filtros.controles-pendientes::after {
+    content: "Disponible cuando publiquemos las primeras ofertas reales";
+    grid-column: 1 / -1;
+    color: #687789;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.controles-pendientes input:disabled,
+.controles-pendientes select:disabled,
+.controles-pendientes button:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.72;
+}
+
 .modo-lanzamiento .destacadas {
     padding-top: 34px;
 }

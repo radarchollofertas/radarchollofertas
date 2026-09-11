@@ -232,7 +232,19 @@ function mostrarProductos(productos) {
         if (productosGlobales.length === 0) {
 
             document.body.classList.add("modo-lanzamiento");
-            document.querySelector(".buscador-filtros").style.display = "none";
+            const controlesCatalogo =
+                document.querySelectorAll(
+                    ".buscador-filtros input, .buscador-filtros select, .buscador-filtros button"
+                );
+
+            controlesCatalogo.forEach(control => {
+                control.disabled = true;
+                control.setAttribute("aria-disabled", "true");
+            });
+
+            document
+                .querySelector(".buscador-filtros")
+                .classList.add("controles-pendientes");
             document.querySelector(".destacadas h2").style.display = "none";
 
             contenedor.innerHTML = `
