@@ -1838,3 +1838,33 @@ main {
 
 }
 
+/* PRUEBA VISUAL: aviso de afiliación visible bajo la cabecera */
+.aviso-publicidad-visible {
+    max-width: 1180px;
+    margin: 14px auto 0;
+    padding: 4px 16px;
+    border: 0;
+    background: transparent;
+    color: #66727c;
+    font-size: 13px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.aviso-publicidad-visible a {
+    margin-left: 8px;
+    color: #4e6879;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .aviso-publicidad-visible {
+        margin: 10px 12px 0;
+        padding: 3px 11px;
+        font-size: 12px;
+    }
+
+    .aviso-publicidad-visible a {
+        display: inline-block;
+    }
+}
