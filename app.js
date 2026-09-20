@@ -125,7 +125,7 @@ function crearTiendas(producto) {
 
                 <div class="fila-tienda">
 
-                    <span class="nombre-tienda">
+                    <span class="nombre-tienda" title="Ver publicación">
                         Ver publicación
                     </span>
 
@@ -183,7 +183,7 @@ function crearTiendas(producto) {
 
                 <div class="fila-tienda">
 
-                    <span class="nombre-tienda">
+                    <span class="nombre-tienda" title="${tienda.nombre}" aria-label="${tienda.nombre}">
                         ${tienda.nombre}
                     </span>
 

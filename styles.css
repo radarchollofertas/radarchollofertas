@@ -634,9 +634,9 @@ select {
 
     align-items: center;
 
-    gap: 10px;
+    gap: 4px;
 
-    padding: 7px 8px 7px 12px;
+    padding: 7px 5px 7px 8px;
 
     border: 1px solid var(--borde);
     border-radius: 9px;
@@ -651,11 +651,12 @@ select {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: help;
 }
 
 .nombre-tienda::before {
     content: "🛍️";
-    margin-right: 7px;
+    margin-right: 4px;
 }
 
 .boton-oferta {
@@ -664,9 +665,9 @@ select {
     align-items: center;
     justify-content: center;
 
-    min-height: 38px;
+    min-height: 30px;
 
-    padding: 0 13px;
+    padding: 0 4px;
 
     border-radius: 7px;
 
@@ -675,7 +676,7 @@ select {
 
     text-decoration: none;
 
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 900;
 
     white-space: nowrap;
