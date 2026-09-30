@@ -279,6 +279,13 @@ body {
    CONTENIDO
 ========================= */
 
+/* RCO_CHOICE_DAY_CSS_INICIO */
+.campana-choice{width:min(1180px,calc(100% - 32px));margin:24px auto 0;padding:24px;color:#173042;background:#fff;border:1px solid #d7e4e8;border-radius:18px;box-shadow:0 12px 30px rgba(8,36,59,.1)}
+.campana-choice-cabecera{display:flex;align-items:center;justify-content:space-between;gap:24px}.campana-choice-etiqueta{color:#148e91;font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.campana-choice h2{margin:5px 0 4px;color:#08243b;font-size:clamp(1.45rem,3vw,2.2rem)}.campana-choice-cabecera p{margin:0;color:#52626c}.campana-choice-boton{flex:0 0 auto;padding:12px 20px;color:#fff;background:#dc3038;border-radius:999px;font-weight:900;text-decoration:none;box-shadow:0 8px 18px rgba(220,48,56,.22)}.campana-choice-boton:hover{transform:translateY(-1px);background:#c9242d}.campana-choice-codigos{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;margin-top:18px}.campana-choice-codigos span{padding:10px 8px;background:#eef4f5;border-radius:11px;text-align:center;font-size:.82rem}.campana-choice-codigos b{display:block;margin-bottom:3px;color:#dc3038;font-size:.98rem}.campana-choice-paypal{margin:16px 0 0;padding:11px 14px;background:#eefafa;border-left:4px solid #1ca6a8;border-radius:4px 10px 10px 4px;font-size:.9rem}.campana-choice-condiciones{margin:10px 0 0;color:#67737a;font-size:.76rem}
+@media(max-width:900px){.campana-choice-codigos{grid-template-columns:repeat(4,minmax(110px,1fr))}}
+@media(max-width:620px){.campana-choice{width:min(100% - 20px,1180px);margin-top:14px;padding:18px 14px}.campana-choice-cabecera{align-items:stretch;flex-direction:column;gap:14px}.campana-choice-boton{text-align:center}.campana-choice-codigos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* RCO_CHOICE_DAY_CSS_FIN */
+
 main {
     max-width: 1500px;
     margin: auto;
