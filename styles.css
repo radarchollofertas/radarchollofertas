@@ -1929,6 +1929,13 @@ main {
     }
 }
 
+/* Móvil en vertical: 6 mm menos de zona blanca fija bajo el logotipo. */
+@media (max-width: 760px) and (orientation: portrait) {
+    .cabecera {
+        padding-bottom: 29px !important;
+    }
+}
+
 @media (max-width: 760px) {
     .cabecera .banner-cabecera {
         display: none;
