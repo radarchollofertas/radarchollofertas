@@ -1922,6 +1922,13 @@ main {
     }
 }
 
+/* Móvil en horizontal: recorte equilibrado de 3 mm arriba y abajo. */
+@media (min-width: 761px) and (max-width: 950px) and (orientation: landscape) and (pointer: coarse) {
+    .cabecera {
+        padding-bottom: 29px !important;
+    }
+}
+
 @media (max-width: 760px) {
     .cabecera .banner-cabecera {
         display: none;
