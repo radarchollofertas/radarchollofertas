@@ -1941,3 +1941,15 @@ main {
         display: none;
     }
 }
+
+/* Fondos cálidos aprobados el 22/10/2026. */
+html,
+body,
+.cabecera,
+footer {
+    background: #fffdfa;
+}
+
+.buscador-filtros {
+    background: #ede0d0;
+}
